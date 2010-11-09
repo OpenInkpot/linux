@@ -106,6 +106,13 @@ config LOCALVERSION_AUTO
 
 	  which is done within the script "scripts/setlocalversion".)
 
+config KERNEL_NONE
+	bool "None"
+	depends on ARM
+	help
+	  If you want to use get a fast startup at the cost of kernel size
+	  you can use an uncompressed kernel.
+
 config HAVE_KERNEL_GZIP
 	bool
 
