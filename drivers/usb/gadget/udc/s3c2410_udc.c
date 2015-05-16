@@ -763,7 +763,6 @@ static void s3c2410_udc_handle_ep0(struct s3c2410_udc *dev)
 		dprintk(DEBUG_NORMAL, "... clear SENT_STALL ...\n");
 		s3c2410_udc_clear_ep0_sst(base_addr);
 		dev->ep0state = EP0_IDLE;
-		return;
 	}
 
 	/* clear setup end */
