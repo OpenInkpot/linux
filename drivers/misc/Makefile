@@ -23,3 +23,4 @@ obj-$(CONFIG_C2PORT)		+= c2port/
 obj-$(CONFIG_MXS_PERSISTENT)	+= mxs-persistent.o
 obj-y				+= eeprom/
 obj-y				+= cb710/
+obj-$(CONFIG_HWLAT_DETECTOR)	+= hwlat_detector.o
